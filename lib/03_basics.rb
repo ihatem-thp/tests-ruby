@@ -7,7 +7,7 @@ def who_is_bigger(*arr)
 end
 
 def reverse_upcase_noLTA(str)
-  return str.upcase.reverse.chars.select { |ch| !["L","T","A"].include?(ch) }.join('')
+  return str.upcase.reverse.chars.select { |ch| !%w(L T A).include?(ch) }.join('')
 end
 
 def array_42(arr)

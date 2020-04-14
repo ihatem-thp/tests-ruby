@@ -20,5 +20,5 @@ def first_word(str)
 end 
 
 def titleize(str)
-  return str.split(' ').each_with_index.map { |x,i|  ["and","the","a","to"].include?(x.downcase) && i > 0 ? x : x = x[0..0].upcase + x[1..-1] }.join(' ')
+  return str.split(' ').each_with_index.map { |x,i|  %w(and the a to).include?(x.downcase) && i > 0 ? x : x = x[0..0].upcase + x[1..-1] }.join(' ')
 end

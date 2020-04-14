@@ -21,8 +21,6 @@ end
 # factorial(5) = 5 * 4 * 3 * 2 * 1 = 120 
 def factorial(a)
   res = 1
-  for i in 1..a do
-    res *= i
-  end
+  a.times { |i| res += i * res}
   return res
 end
