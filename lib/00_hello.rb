@@ -3,9 +3,6 @@ def hello
 end
 
 def greet(name)
-  puts "What's your name ?"
-  print "> "
-  input = gets.chomp
-  return "Hello, #{input}!"
+  return "Hello, #{name}!"
 end
 
